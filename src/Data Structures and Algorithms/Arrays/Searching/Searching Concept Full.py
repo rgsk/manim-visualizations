@@ -17,8 +17,8 @@ def intro(scene: Scene):
 def search_for_target_small_array(scene: Scene):
     text = Tex(
         f"We are given an array of numbers, and we want to know if a certain number ``target'' exists in it or not.",
-        font_size=34
-    ).to_edge(UP + 2)
+        font_size=40
+    ).to_edge(UP)
     scene.play(Write(text))
     scene.wait(3)
     target = 2
@@ -65,7 +65,7 @@ def search_for_target_small_array(scene: Scene):
 
 def search_for_target_large_array(scene: Scene):
     text = Tex(
-        f"Let's try it for a larger array?", font_size=34).to_edge(UP)
+        f"Let's try it for a larger array?", font_size=40).to_edge(UP)
     scene.play(Write(text))
     array = [20, 12, 4, 21, 1, 3, 9, 10, 2, 11, 15, 19]
     squares = [Square(side_length=square_side_length) for v in array]
@@ -96,7 +96,7 @@ def search_for_target_large_array(scene: Scene):
     scene.play(numbers[index].animate.set_color(GREEN),
                squares[index].animate.set_color(GREEN),)
     scene.wait(1)
-    text = Tex(f"It's took longer than before right?",
+    text = Tex(f"It took longer than before right?",
                font_size=34).next_to(text, DOWN)
     scene.play(Write(text))
     scene.wait(2)
@@ -115,7 +115,7 @@ def search_for_target_large_array(scene: Scene):
 def search_for_target_sorted_array(scene: Scene):
     array = [20, 12, 4, 21, 1, 3, 9, 10, 2, 11, 15, 19]
     text = Tex(
-        f"Here is the same array in sorted order", font_size=34).to_edge(UP)
+        f"Here is the same array in sorted order", font_size=40).to_edge(UP)
     scene.play(Write(text))
     array.sort()
 
