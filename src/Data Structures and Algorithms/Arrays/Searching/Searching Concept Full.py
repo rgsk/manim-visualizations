@@ -363,6 +363,7 @@ def linear_search_sorted_array(scene: Scene):
 
 def binary_search(scene: Scene):
     array = [20, 12, 4, 21, 1, 3, 9, 10, 2, 11, 15, 19]
+    array.sort()
     target = 11
     n = len(array)
 
