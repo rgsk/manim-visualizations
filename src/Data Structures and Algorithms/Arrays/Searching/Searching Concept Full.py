@@ -221,7 +221,7 @@ def linear_search(scene: Scene):
     scene.play(Write(text))
 
     text = Tex(f"Linear search algorithm works by searching for target in the array from the beginning.",
-               font_size=34).shift(DOWN * 2)
+               font_size=34).shift(DOWN * 3)
     scene.play(Write(text))
     scene.wait(2)
 
@@ -240,7 +240,7 @@ def linear_search(scene: Scene):
     while i < n:
         if i == 0:
             text = Tex(f"At each step we are evaluating, if arr[i] == target",
-                       font_size=34).shift(DOWN * 2)
+                       font_size=34).shift(DOWN * 3)
             scene.play(Write(text))
             scene.wait(2)
             scene.play(FadeOut(text))
@@ -254,7 +254,7 @@ def linear_search(scene: Scene):
                        squares[i].animate.set_color(GREEN),)
 
             text = Tex(f"We have found our target - {target}, so the algorithm concludes, and we return the index at which target is found ie. {i}.",
-                       font_size=34).shift(DOWN * 2)
+                       font_size=34).shift(DOWN * 3)
             scene.play(Write(text))
             scene.wait(2)
             break
@@ -262,7 +262,7 @@ def linear_search(scene: Scene):
 
     scene.play(FadeOut(text))
     text = Tex(f"But Linear search is slow, in worst case, you would have to search through all the elements to determine the index of target element.",
-               font_size=34).shift(DOWN * 2)
+               font_size=34).shift(DOWN * 3)
     scene.play(Write(text))
     t1 = text
     scene.wait(2)
@@ -273,7 +273,7 @@ def linear_search(scene: Scene):
     t2 = text
     scene.play([FadeOut(t1), FadeOut(t2)])
     text = Tex(f"We saw earlier that if array is sorted, we humans can search faster.",
-               font_size=34).shift(DOWN * 2)
+               font_size=34).shift(DOWN * 3)
     scene.play(Write(text))
     scene.wait(2)
     text = Tex(f"Let's see next, how linear search performs on a sorted array.",
@@ -337,7 +337,7 @@ def linear_search_sorted_array(scene: Scene):
                        squares[i].animate.set_color(GREEN),)
 
             t1 = Tex(f"We have found our target - {target}, and we return the index at which target is found ie. {i}.",
-                     font_size=34).shift(DOWN * 2)
+                     font_size=34).shift(DOWN * 3)
             scene.play(Write(t1))
             scene.wait(2)
             break
@@ -351,7 +351,7 @@ def linear_search_sorted_array(scene: Scene):
     scene.play(FadeOut(t1), FadeOut(t2))
 
     text = Tex(f"Linear Search is a computer algorithm, and it can't make guesses like us, we need to define a definite procedure to perform faster search operations if the array is sorted.",
-               font_size=34).shift(DOWN * 2)
+               font_size=34).shift(DOWN * 3)
     scene.play(Write(text))
     scene.wait(2)
 
@@ -517,7 +517,7 @@ def binary_search(scene: Scene):
 
         else:
             t1 = Tex(f"Mid index points to the target element, so we return index - {mid}",
-                     font_size=34).shift(DOWN * 2)
+                     font_size=34).shift(DOWN * 3)
             scene.play(Write(t1))
             scene.wait(2)
             scene.play(FadeOut(t1))
@@ -545,7 +545,7 @@ def binary_search(scene: Scene):
             break
 
     t1 = Tex(f"Time Complexity of Binary Search",
-             font_size=34).shift(DOWN * 2)
+             font_size=34).shift(DOWN * 3)
     scene.play(Write(t1))
     scene.wait(2)
     t1 = Tex(f"Since, each time we reduce search space by half, time complexity is O(log(n))",
