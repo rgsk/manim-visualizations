@@ -253,7 +253,7 @@ def linear_search(scene: Scene):
             scene.play(numbers[i].animate.set_color(GREEN),
                        squares[i].animate.set_color(GREEN),)
 
-            text = Tex(f"We have found our target - {target}, so the algorithm concludes, and we return the index found ie. {i}.",
+            text = Tex(f"We have found our target - {target}, so the algorithm concludes, and we return the index at which target is found ie. {i}.",
                        font_size=34).shift(DOWN * 2)
             scene.play(Write(text))
             scene.wait(2)
@@ -336,7 +336,7 @@ def linear_search_sorted_array(scene: Scene):
             scene.play(numbers[i].animate.set_color(GREEN),
                        squares[i].animate.set_color(GREEN),)
 
-            t1 = Tex(f"We have found our target - {target}, and we return the index found ie. {i}.",
+            t1 = Tex(f"We have found our target - {target}, and we return the index at which target is found ie. {i}.",
                      font_size=34).shift(DOWN * 2)
             scene.play(Write(t1))
             scene.wait(2)
